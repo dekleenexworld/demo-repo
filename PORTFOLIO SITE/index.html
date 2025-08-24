@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Designer Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 12px;
+      transition: all 0.3s;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 15px rgba(255,255,255,0.8);
+    }
+
+    /* Clock */
+    .clock {
+      position: fixed;
+      top: 15px;
+      right: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    /* Sections */
+    section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 100px auto;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Projects Grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      margin: 40px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">💎 My Portfolio</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Digital Clock -->
+  <div class="clock" id="clock"></div>
+
+  <!-- Sections -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>About me 👨‍💻<br/>
+
+   Hi, my name is ANTIA, a passionate Web & Graphics Designer with over 3 years of professional
+   experience in crafting creative digital solutions. My journey into design started with a simple love for technology, and over the years, I’ve transformed that passion into a career dedicated to helping brands, businesses, and individuals build strong digital identities.
+
+   <p>Web Design & Development Creating responsive, user-friendly websites that combine
+   functionality with clean, modern design.I specialize in:</p>
+
+   
+
+   *Graphics Design
+   Designing logos, banners, social media creatives, <br />
+   and marketing materials that communicate brand stories effectively.<br />
+
+   UX/UI Design<br />
+   Developing intuitive and visually appealing interfaces that prioritize seamless user experiences.
+
+   Other Digital Skills<br />
+   From branding to motion graphics and basic front-end coding, I bring versatile expertise to every project.
+
+   ✨ What drives me is the excitement of turning ideas into reality—whether it’s a sleek website, an engaging visual, or an interface that just feels right. I believe technology is not just about design or code, but about **impact, creativity, and connection.
+
+   When I’m not designing, I’m usually exploring new tech trends, sharpening my digital skills, or brainstorming creative ideas that push boundaries.
+
+   💻✨</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <p> # 💼 Services<br />
+   At De Kleenex World, I bring creativity, strategy, and technology together to deliver impactful digital solutions. With expertise spanning web Design, Graphic Design, UX/UI, and other digital skills, I help individuals, brands, and businesses build a strong and memorable online presence.
+   I design responsive websites, create UI/UX wireframes, and build stunning digital experiences with HTML, CSS, and JavaScript.</p>
+   </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">🌐 Portfolio Website</div>
+      <div class="project-card">📱 Mobile App Design</div>
+      <div class="project-card">🎨 Creative Landing Page</div>
+      <div class="project-card">Programming</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: youremail@example.com</p>
+    <p>📞 Phone: +123 456 7890</p>
+  </section>
+
+  <footer>
+    © 2025 My Portfolio | Designed with 💖
+  </footer>
+
+  <!-- Digital Clock Script -->
+  <script>
+    function updateClock() {
+      const clock = document.getElementById("clock");
+      const now = new Date();
+      let hours = now.getHours().toString().padStart(2, '0');
+      let minutes = now.getMinutes().toString().padStart(2, '0');
+      let seconds = now.getSeconds().toString().padStart(2, '0');
+      clock.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
